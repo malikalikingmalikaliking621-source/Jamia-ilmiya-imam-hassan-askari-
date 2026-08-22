@@ -1,1155 +1,1250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamia Illmia Imam Hassan Askari</title>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            background: #f5f2ed;
-            color: #1e2a3a;
-            line-height: 1.6;
-        }
+<title>جامعہ علمیہ امام حسن عسکریؑ</title>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+<meta name="description" content="جامعہ علمیہ امام حسن عسکریؑ - اسلامی تعلیم، قرآن، حدیث، فقہ، دروس، بیانات، تصاویر اور ویڈیوز">
 
-        /* header / navbar */
-        .navbar {
-            background: #0b2a3b;
-            padding: 0.8rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+<style>
 
-        .navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        .logo i {
-            font-size: 2.2rem;
-            color: #d4af37;
-        }
+body{
+    font-family:"Noto Nastaliq Urdu","Segoe UI",Arial,sans-serif;
+    background:#f7f8f3;
+    color:#17231d;
+    line-height:1.9;
+}
 
-        .logo h1 {
-            color: #fff;
-            font-weight: 500;
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-        }
+a{
+    text-decoration:none;
+}
 
-        .logo span {
-            color: #d4af37;
-            font-weight: 600;
-        }
+img{
+    width:100%;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
 
-        .nav-links a {
-            color: #e8e2d9;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.05rem;
-            transition: 0.2s;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-        }
+/* TOP BAR */
 
-        .nav-links a:hover {
-            color: #f5c842;
-            border-bottom-color: #d4af37;
-        }
+.topbar{
+    background:#0c3325;
+    color:white;
+    padding:8px 6%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    font-size:13px;
+}
 
-        .hamburger {
-            display: none;
-            color: #fff;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
 
-        /* Hero section */
-        .hero {
-            background: linear-gradient(135deg, #133446 0%, #1d4a5e 100%);
-            color: #fff;
-            padding: 3.5rem 0 4.5rem;
-            border-bottom: 6px solid #d4af37;
-            margin-bottom: 2.5rem;
-        }
+/* HEADER */
 
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+header{
+    background:white;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
 
-        .hero-content h2 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-        }
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
 
-        .hero-content h2 i {
-            color: #d4af37;
-            margin: 0 10px;
-        }
+.logo{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#c49a3a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    font-weight:bold;
+    border:3px solid #ead9a5;
+}
 
-        .hero-content p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 0.5rem auto 1.8rem;
-            font-style: italic;
-        }
+.brand h1{
+    color:#103d2c;
+    font-size:20px;
+}
 
-        .hero-badge {
-            background: #d4af37;
-            color: #0b2a3b;
-            padding: 0.5rem 2.2rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-            display: inline-block;
-        }
+.brand p{
+    color:#777;
+    font-size:11px;
+}
 
-        .hero-badge i {
-            margin-right: 10px;
-        }
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px;
+}
 
-        /* section titles */
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 600;
-            color: #0b2a3b;
-            text-align: center;
-            margin: 2.8rem 0 1.2rem;
-            position: relative;
-        }
+nav a{
+    color:#26362e;
+    padding:7px 10px;
+    border-radius:6px;
+    font-size:13px;
+}
 
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: #d4af37;
-            margin: 10px auto 0;
-            border-radius: 4px;
-        }
+nav a:hover{
+    background:#103d2c;
+    color:white;
+}
 
-        .section-sub {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #3d4f5e;
-            margin-bottom: 2rem;
-        }
+.nav-btn{
+    background:#c49a3a;
+    color:white !important;
+}
 
-        /* cards grid */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0 2.5rem;
-        }
 
-        .card {
-            background: #fff;
-            border-radius: 16px;
-            padding: 1.8rem 1.5rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-            transition: 0.25s ease;
-            border: 1px solid #eae3da;
-            text-align: center;
-        }
+/* HERO */
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 32px rgba(0,0,0,0.1);
-            border-color: #d4af37;
-        }
+.hero{
+    min-height:570px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 6%;
+    color:white;
+    background:
+    linear-gradient(
+        rgba(8,43,30,.92),
+        rgba(8,43,30,.94)
+    ),
+    radial-gradient(circle,#3d8060,#092c1e);
+}
 
-        .card i {
-            font-size: 2.8rem;
-            color: #d4af37;
-            margin-bottom: 1rem;
-            background: #f2ede7;
-            padding: 0.8rem;
-            border-radius: 50%;
-        }
+.hero-content{
+    max-width:850px;
+}
 
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.6rem;
-            color: #0b2a3b;
-        }
+.arabic{
+    color:#e8cc79;
+    font-size:25px;
+    margin-bottom:12px;
+}
 
-        .card p {
-            color: #3f4f5e;
-            font-size: 0.98rem;
-        }
+.hero h2{
+    font-size:47px;
+    margin-bottom:15px;
+}
 
-        /* about / mission */
-        .about-box {
-            background: #ffffffd9;
-            backdrop-filter: blur(2px);
-            padding: 2.2rem 2.8rem;
-            border-radius: 28px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-            border: 1px solid #e0d6ca;
-            margin: 2rem 0 3rem;
-        }
+.hero h2 span{
+    color:#e7c56a;
+}
 
-        .about-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2.5rem;
-            justify-content: center;
-            align-items: flex-start;
-        }
+.hero p{
+    color:#e0e8e3;
+    font-size:17px;
+}
 
-        .about-text {
-            flex: 2;
-            min-width: 260px;
-        }
+.buttons{
+    margin-top:28px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
 
-        .about-text h3 {
-            font-size: 1.8rem;
-            color: #0b2a3b;
-            margin-bottom: 0.5rem;
-        }
+.btn{
+    display:inline-block;
+    padding:11px 24px;
+    border-radius:7px;
+    font-weight:bold;
+}
 
-        .about-text h3 i {
-            color: #d4af37;
-            margin-right: 10px;
-        }
+.btn-gold{
+    background:#c49a3a;
+    color:white;
+}
 
-        .about-text p {
-            font-size: 1.05rem;
-            color: #1f3140;
-        }
+.btn-white{
+    background:white;
+    color:#103d2c;
+}
 
-        .about-stats {
-            flex: 1;
-            min-width: 180px;
-            background: #f4efe9;
-            padding: 1.5rem 2rem;
-            border-radius: 30px;
-            text-align: center;
-        }
 
-        .about-stats div {
-            margin: 0.8rem 0;
-        }
+/* SECTION */
 
-        .about-stats i {
-            color: #d4af37;
-            font-size: 1.8rem;
-            margin-right: 8px;
-        }
+.section{
+    padding:65px 7%;
+}
 
-        .about-stats span {
-            font-weight: 600;
-            font-size: 1.4rem;
-            color: #0b2a3b;
-        }
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
 
-        /* faculty / teachers */
-        .faculty-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.8rem;
-            margin: 1.5rem 0 2rem;
-        }
+.section-title h2{
+    color:#103d2c;
+    font-size:31px;
+}
 
-        .faculty-item {
-            background: #fff;
-            padding: 1.8rem 1rem;
-            border-radius: 40px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-            border: 1px solid #e7dfd6;
-        }
+.section-title span{
+    display:block;
+    width:65px;
+    height:3px;
+    background:#c49a3a;
+    margin:10px auto;
+}
 
-        .faculty-item i {
-            font-size: 3.2rem;
-            color: #0b2a3b;
-            background: #ebdccb;
-            padding: 0.8rem;
-            border-radius: 60px;
-            margin-bottom: 0.8rem;
-        }
+.section-title p{
+    color:#777;
+    font-size:14px;
+}
 
-        .faculty-item h4 {
-            font-size: 1.2rem;
-            color: #0b2a3b;
-        }
 
-        .faculty-item p {
-            color: #5c6f7e;
-            font-size: 0.9rem;
-        }
+/* ABOUT */
 
-        /* footer */
-        .footer {
-            background: #0b1e2b;
-            color: #cfd7de;
-            padding: 2.5rem 0 1.8rem;
-            margin-top: 3.5rem;
-            border-top: 6px solid #d4af37;
-        }
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
 
-        .footer .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1.5rem;
-        }
+.about-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
 
-        .footer-left i {
-            color: #d4af37;
-            margin-right: 8px;
-        }
+.about-box h3{
+    color:#103d2c;
+    margin-bottom:10px;
+}
 
-        .footer-left h3 {
-            color: #fff;
-            font-weight: 400;
-            font-size: 1.4rem;
-        }
+.about-box p{
+    color:#555;
+    font-size:15px;
+}
 
-        .footer-links {
-            display: flex;
-            gap: 1.8rem;
-            flex-wrap: wrap;
-        }
+.quote{
+    background:#103d2c;
+    color:white;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+}
 
-        .footer-links a {
-            color: #bac9d6;
-            text-decoration: none;
-            transition: 0.2s;
-        }
+.quote p{
+    color:#dbe5df;
+}
 
-        .footer-links a:hover {
-            color: #d4af37;
-        }
 
-        .footer-copy {
-            text-align: center;
-            padding-top: 1.5rem;
-            border-top: 1px solid #2b4050;
-            margin-top: 1.5rem;
-            width: 100%;
-            font-size: 0.9rem;
-            color: #8a9aa8;
-        }
+/* PROGRAMS */
 
-        /* responsive */
-        @media (max-width: 850px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 0.5rem;
-                background: #0b2a3b;
-                padding: 1rem 0;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: block;
-            }
-            .hero-content h2 {
-                font-size: 2.2rem;
-            }
-            .about-box {
-                padding: 1.5rem;
-            }
-        }
+.programs{
+    background:#edf2ed;
+}
 
-        @media (max-width: 500px) {
-            .logo h1 {
-                font-size: 1.2rem;
-            }
-            .hero-content h2 {
-                font-size: 1.9rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:27px 22px;
+    border-radius:12px;
+    text-align:center;
+    border-bottom:4px solid #c49a3a;
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    margin:auto auto 13px;
+    border-radius:50%;
+    background:#103d2c;
+    color:#e5c46b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+}
+
+.card h3{
+    color:#103d2c;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+}
+
+
+/* ISLAMIC STATUS */
+
+.status-section{
+    background:#103d2c;
+    color:white;
+}
+
+.status-section .section-title h2{
+    color:white;
+}
+
+.status-section .section-title p{
+    color:#cbd8d1;
+}
+
+.status{
+    max-width:850px;
+    margin:auto;
+    background:#174b37;
+    border-radius:14px;
+    padding:35px;
+    text-align:center;
+}
+
+.status .arabic{
+    font-size:30px;
+}
+
+.status p{
+    color:#e3ebe7;
+}
+
+
+/* PHOTO GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.gallery-card:hover{
+    transform:translateY(-5px);
+}
+
+.gallery-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+}
+
+.gallery-card h3{
+    color:#103d2c;
+    text-align:center;
+    padding:12px;
+}
+
+
+/* VIDEOS */
+
+.video-section{
+    background:#edf2ed;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.video-card{
+    background:white;
+    padding:14px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.video-card video{
+    width:100%;
+    border-radius:8px;
+    display:block;
+    background:#000;
+}
+
+.video-card h3{
+    color:#103d2c;
+    text-align:center;
+    padding:10px;
+}
+
+
+/* NEWS */
+
+.news{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.news-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.news-icon{
+    background:#103d2c;
+    color:#e5c46b;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+}
+
+.news-body{
+    padding:20px;
+}
+
+.news-body h3{
+    color:#103d2c;
+}
+
+.news-body p{
+    color:#666;
+    font-size:14px;
+}
+
+
+/* ADMISSION */
+
+.admission{
+    background:#103d2c;
+    color:white;
+    text-align:center;
+}
+
+.admission h2{
+    font-size:31px;
+}
+
+.admission p{
+    color:#dbe5df;
+    max-width:700px;
+    margin:auto;
+}
+
+
+/* CONTACT */
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.contact-box h3{
+    color:#103d2c;
+    margin-bottom:15px;
+}
+
+.contact-item{
+    margin:10px 0;
+    color:#555;
+}
+
+.contact-item strong{
+    color:#103d2c;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#071e15;
+    color:white;
+    padding:45px 7% 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+footer h3{
+    color:#e5c46b;
+    margin-bottom:12px;
+}
+
+footer p,
+footer li{
+    color:#c4d0ca;
+    font-size:14px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin:5px 0;
+}
+
+footer a{
+    color:#c4d0ca;
+}
+
+footer a:hover{
+    color:#e5c46b;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    margin-top:30px;
+    padding-top:15px;
+    text-align:center;
+    color:#9ca9a2;
+    font-size:12px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    header{
+        position:relative;
+        flex-direction:column;
+    }
+
+    .about,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .cards,
+    .news,
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .brand h1{
+        font-size:17px;
+    }
+
+    .hero{
+        min-height:500px;
+        padding:65px 5%;
+    }
+
+    .hero h2{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .section{
+        padding:50px 5%;
+    }
+
+    .cards,
+    .news,
+    .gallery,
+    .video-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:12px;
+        padding:6px 7px;
+    }
+}
+
+</style>
 </head>
+
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-mosque"></i>
-                <h1>Jamia <span>Illmia</span></h1>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#programs"><i class="fas fa-book-open"></i> Programs</a></li>
-                <li><a href="#faculty"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburgerIcon">
-                <i class="fas fa-bars"></i>
-            </div>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+    <span>بسم اللہ الرحمن الرحیم</span>
+    <span>علم • عمل • اخلاق</span>
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="brand">
+
+        <div class="logo">ع</div>
+
+        <div>
+            <h1>جامعہ علمیہ امام حسن عسکریؑ</h1>
+            <p>اسلامی تعلیم و تربیت کا علمی مرکز</p>
         </div>
-    </nav>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <h2><i class="fas fa-star-and-crescent"></i> Imam Hassan Askari <i class="fas fa-star-and-crescent"></i></h2>
-            <p>House of Knowledge · Spiritual & Academic Excellence</p>
-            <div class="hero-badge">
-                <i class="fas fa-graduation-cap"></i> Established 1985
-            </div>
-        </div>
-    </section>
-
-    <div class="container">
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">About Jamia</h2>
-            <p class="section-sub">Preserving the legacy of Imam Hassan Askari (AS)</p>
-            <div class="about-box">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h3><i class="fas fa-hand-holding-heart"></i> Our Mission</h3>
-                        <p>Jamia Illmia Imam Hassan Askari is a centre of Islamic learning, 
-                        dedicated to nurturing scholars who embody the teachings of Ahlul Bayt. 
-                        We combine traditional Islamic sciences with modern education to prepare 
-                        students for leadership and service.</p>
-                        <p style="margin-top: 0.8rem;"><i class="fas fa-quote-left" style="color: #d4af37;"></i> 
-                        "Knowledge is the heritage of the prophets." — Imam Hassan Askari (AS)</p>
-                    </div>
-                    <div class="about-stats">
-                        <div><i class="fas fa-user-graduate"></i> <span>350+</span> Alumni</div>
-                        <div><i class="fas fa-chalkboard"></i> <span>28</span> Faculty</div>
-                        <div><i class="fas fa-globe-asia"></i> <span>12</span> Countries</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Programs -->
-        <section id="programs">
-            <h2 class="section-title">Our Programs</h2>
-            <p class="section-sub">Islamic sciences · Arabic · Fiqh · Philosophy · Ethics</p>
-            <div class="cards-grid">
-                <div class="card">
-                    <i class="fas fa-quran"></i>
-                    <h3>Qur'an & Tafsir</h3>
-                    <p>Deep study of revelation, exegesis, and memorization with traditional methods.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Fiqh & Usul</h3>
-                    <p>Jurisprudence and principles of Islamic law, with comparative analysis.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Philosophy & Logic</h3>
-                    <p>Islamic philosophy, logic, and intellectual discourse from early to modern.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-history"></i>
-                    <h3>Seerah & History</h3>
-                    <p>Life of the Prophet (PBUH) and the Ahlul Bayt, Islamic civilization.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Faculty -->
-        <section id="faculty">
-            <h2 class="section-title">Faculty & Mentors</h2>
-            <p class="section-sub">Guided by scholars of high esteem</p>
-            <div class="faculty-grid">
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Maulana Rizvi</h4>
-                    <p>Dean, Fiqh & Usul</p>
-                </div>
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Dr. Fatima Zaidi</h4>
-                    <p>Qur'anic Studies</p>
-                </div>
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Sh. Abbas Jafri</h4>
-                    <p>Philosophy & Ethics</p>
-                </div>
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Maulana Haider</h4>
-                    <p>History & Seerah</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact / CTA -->
-        <section id="contact" style="margin: 2.5rem 0;">
-            <div style="background: #133446; border-radius: 48px; padding: 2.5rem 2rem; color: #fff; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                <h3 style="font-size: 2rem; font-weight: 500;"><i class="fas fa-phone-alt" style="color: #d4af37;"></i> Connect with Us</h3>
-                <p style="margin: 1rem 0 1.5rem; font-size: 1.1rem; opacity: 0.9;">Visit our campus or reach out for admissions, inquiries, and collaborations.</p>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; font-size: 1.1rem;">
-                    <span><i class="fas fa-map-pin" style="color: #d4af37;"></i> Najaf, Iraq</span>
-                    <span><i class="fas fa-envelope" style="color: #d4af37;"></i> info@jamiaimamhassan.org</span>
-                    <span><i class="fas fa-phone" style="color: #d4af37;"></i> +964 78 1234 567</span>
-                </div>
-                <div style="margin-top: 2rem;">
-                    <span style="background: #d4af37; color: #0b2a3b; padding: 0.6rem 2.2rem; border-radius: 60px; font-weight: 600;"><i class="fas fa-calendar-check"></i> Visit Us</span>
-                </div>
-            </div>
-        </section>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-left">
-                <h3><i class="fas fa-mosque"></i> Jamia Illmia Imam Hassan Askari</h3>
-                <p style="margin-top: 4px; font-size: 0.9rem;">Illuminating hearts with divine knowledge</p>
-            </div>
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="footer-copy">
-                <p>© 2026 Jamia Illmia Imam Hassan Askari · All rights reserved.</p>
-                <p style="margin-top: 4px; font-size: 0.8rem; opacity: 0.7;">Coded with <i class="fas fa-heart" style="color: #d4af37;"></i> for the seekers of knowledge</p>
-            </div>
-        </div>
-    </footer>
 
-    <!-- JavaScript for mobile hamburger -->
-    <script>
-        const hamburger = document.getElementById('hamburgerIcon');
-        const navLinks = document.getElementById('navLinks');
+    <nav>
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        // close menu when a link is clicked (optional)
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
-</body>
-  </html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamia Illmia Imam Hassan Askari</title>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
-        }
+        <a href="#home">ہوم</a>
+        <a href="#about">تعارف</a>
+        <a href="#programs">تعلیم</a>
+        <a href="#status">اسلامی اسٹیٹس</a>
+        <a href="#gallery">تصاویر</a>
+        <a href="#videos">ویڈیوز</a>
+        <a href="#news">خبریں</a>
+        <a href="#contact">رابطہ</a>
+        <a href="#admission" class="nav-btn">داخلہ</a>
 
-        body {
-            background: #f5f2ed;
-            color: #1e2a3a;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* header / navbar */
-        .navbar {
-            background: #0b2a3b;
-            padding: 0.8rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo i {
-            font-size: 2.2rem;
-            color: #d4af37;
-        }
-
-        .logo h1 {
-            color: #fff;
-            font-weight: 500;
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-        }
-
-        .logo span {
-            color: #d4af37;
-            font-weight: 600;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #e8e2d9;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.05rem;
-            transition: 0.2s;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-        }
-
-        .nav-links a:hover {
-            color: #f5c842;
-            border-bottom-color: #d4af37;
-        }
-
-        .hamburger {
-            display: none;
-            color: #fff;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
-        /* Hero section */
-        .hero {
-            background: linear-gradient(135deg, #133446 0%, #1d4a5e 100%);
-            color: #fff;
-            padding: 3.5rem 0 4.5rem;
-            border-bottom: 6px solid #d4af37;
-            margin-bottom: 2.5rem;
-        }
-
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero-content h2 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-        }
-
-        .hero-content h2 i {
-            color: #d4af37;
-            margin: 0 10px;
-        }
-
-        .hero-content p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 0.5rem auto 1.8rem;
-            font-style: italic;
-        }
-
-        .hero-badge {
-            background: #d4af37;
-            color: #0b2a3b;
-            padding: 0.5rem 2.2rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-            display: inline-block;
-        }
-
-        .hero-badge i {
-            margin-right: 10px;
-        }
-
-        /* section titles */
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 600;
-            color: #0b2a3b;
-            text-align: center;
-            margin: 2.8rem 0 1.2rem;
-            position: relative;
-        }
-
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: #d4af37;
-            margin: 10px auto 0;
-            border-radius: 4px;
-        }
-
-        .section-sub {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #3d4f5e;
-            margin-bottom: 2rem;
-        }
-
-        /* cards grid */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0 2.5rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 16px;
-            padding: 1.8rem 1.5rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-            transition: 0.25s ease;
-            border: 1px solid #eae3da;
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 32px rgba(0,0,0,0.1);
-            border-color: #d4af37;
-        }
-
-        .card i {
-            font-size: 2.8rem;
-            color: #d4af37;
-            margin-bottom: 1rem;
-            background: #f2ede7;
-            padding: 0.8rem;
-            border-radius: 50%;
-        }
-
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.6rem;
-            color: #0b2a3b;
-        }
-
-        .card p {
-            color: #3f4f5e;
-            font-size: 0.98rem;
-        }
-
-        /* about / mission */
-        .about-box {
-            background: #ffffffd9;
-            backdrop-filter: blur(2px);
-            padding: 2.2rem 2.8rem;
-            border-radius: 28px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-            border: 1px solid #e0d6ca;
-            margin: 2rem 0 3rem;
-        }
-
-        .about-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2.5rem;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .about-text {
-            flex: 2;
-            min-width: 260px;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            color: #0b2a3b;
-            margin-bottom: 0.5rem;
-        }
-
-        .about-text h3 i {
-            color: #d4af37;
-            margin-right: 10px;
-        }
-
-        .about-text p {
-            font-size: 1.05rem;
-            color: #1f3140;
-        }
-
-        .about-stats {
-            flex: 1;
-            min-width: 180px;
-            background: #f4efe9;
-            padding: 1.5rem 2rem;
-            border-radius: 30px;
-            text-align: center;
-        }
-
-        .about-stats div {
-            margin: 0.8rem 0;
-        }
-
-        .about-stats i {
-            color: #d4af37;
-            font-size: 1.8rem;
-            margin-right: 8px;
-        }
-
-        .about-stats span {
-            font-weight: 600;
-            font-size: 1.4rem;
-            color: #0b2a3b;
-        }
-
-        /* faculty / teachers */
-        .faculty-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.8rem;
-            margin: 1.5rem 0 2rem;
-        }
-
-        .faculty-item {
-            background: #fff;
-            padding: 1.8rem 1rem;
-            border-radius: 40px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-            border: 1px solid #e7dfd6;
-        }
-
-        .faculty-item i {
-            font-size: 3.2rem;
-            color: #0b2a3b;
-            background: #ebdccb;
-            padding: 0.8rem;
-            border-radius: 60px;
-            margin-bottom: 0.8rem;
-        }
-
-        .faculty-item h4 {
-            font-size: 1.2rem;
-            color: #0b2a3b;
-        }
-
-        .faculty-item p {
-            color: #5c6f7e;
-            font-size: 0.9rem;
-        }
-
-        /* footer */
-        .footer {
-            background: #0b1e2b;
-            color: #cfd7de;
-            padding: 2.5rem 0 1.8rem;
-            margin-top: 3.5rem;
-            border-top: 6px solid #d4af37;
-        }
-
-        .footer .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .footer-left i {
-            color: #d4af37;
-            margin-right: 8px;
-        }
-
-        .footer-left h3 {
-            color: #fff;
-            font-weight: 400;
-            font-size: 1.4rem;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 1.8rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: #bac9d6;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: #d4af37;
-        }
-
-        .footer-copy {
-            text-align: center;
-            padding-top: 1.5rem;
-            border-top: 1px solid #2b4050;
-            margin-top: 1.5rem;
-            width: 100%;
-            font-size: 0.9rem;
-            color: #8a9aa8;
-        }
-
-        /* responsive */
-        @media (max-width: 850px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 0.5rem;
-                background: #0b2a3b;
-                padding: 1rem 0;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: block;
-            }
-            .hero-content h2 {
-                font-size: 2.2rem;
-            }
-            .about-box {
-                padding: 1.5rem;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .logo h1 {
-                font-size: 1.2rem;
-            }
-            .hero-content h2 {
-                font-size: 1.9rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-mosque"></i>
-                <h1>Jamia <span>Illmia</span></h1>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#programs"><i class="fas fa-book-open"></i> Programs</a></li>
-                <li><a href="#faculty"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburgerIcon">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <h2><i class="fas fa-star-and-crescent"></i> Imam Hassan Askari <i class="fas fa-star-and-crescent"></i></h2>
-            <p>House of Knowledge · Spiritual & Academic Excellence</p>
-            <div class="hero-badge">
-                <i class="fas fa-graduation-cap"></i> Established 1985
-            </div>
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="arabic">
+            بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
         </div>
-    </section>
 
-    <div class="container">
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">About Jamia</h2>
-            <p class="section-sub">Preserving the legacy of Imam Hassan Askari (AS)</p>
-            <div class="about-box">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h3><i class="fas fa-hand-holding-heart"></i> Our Mission</h3>
-                        <p>Jamia Illmia Imam Hassan Askari is a centre of Islamic learning, 
-                        dedicated to nurturing scholars who embody the teachings of Ahlul Bayt. 
-                        We combine traditional Islamic sciences with modern education to prepare 
-                        students for leadership and service.</p>
-                        <p style="margin-top: 0.8rem;"><i class="fas fa-quote-left" style="color: #d4af37;"></i> 
-                        "Knowledge is the heritage of the prophets." — Imam Hassan Askari (AS)</p>
-                    </div>
-                    <div class="about-stats">
-                        <div><i class="fas fa-user-graduate"></i> <span>350+</span> Alumni</div>
-                        <div><i class="fas fa-chalkboard"></i> <span>28</span> Faculty</div>
-                        <div><i class="fas fa-globe-asia"></i> <span>12</span> Countries</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <h2>
+            جامعہ علمیہ
+            <span>امام حسن عسکریؑ</span>
+        </h2>
 
-        <!-- Programs -->
-        <section id="programs">
-            <h2 class="section-title">Our Programs</h2>
-            <p class="section-sub">Islamic sciences · Arabic · Fiqh · Philosophy · Ethics</p>
-            <div class="cards-grid">
-                <div class="card">
-                    <i class="fas fa-quran"></i>
-                    <h3>Qur'an & Tafsir</h3>
-                    <p>Deep study of revelation, exegesis, and memorization with traditional methods.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Fiqh & Usul</h3>
-                    <p>Jurisprudence and principles of Islamic law, with comparative analysis.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Philosophy & Logic</h3>
-                    <p>Islamic philosophy, logic, and intellectual discourse from early to modern.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-history"></i>
-                    <h3>Seerah & History</h3>
-                    <p>Life of the Prophet (PBUH) and the Ahlul Bayt, Islamic civilization.</p>
-                </div>
-            </div>
-        </section>
+        <p>
+            قرآن و حدیث، اسلامی علوم، اخلاقی تربیت اور
+            علمی تحقیق کے ذریعے علم و کردار کی تعمیر۔
+        </p>
 
-        <!-- Faculty -->
-        <section id="faculty">
-            <h2 class="section-title">Faculty & Mentors</h2>
-            <p class="section-sub">Guided by scholars of high esteem</p>
-            <div class="faculty-grid">
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Maulana Rizvi</h4>
-                    <p>Dean, Fiqh & Usul</p>
-                </div>
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Dr. Fatima Zaidi</h4>
-                    <p>Qur'anic Studies</p>
-                </div>
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Sh. Abbas Jafri</h4>
-                    <p>Philosophy & Ethics</p>
-                </div>
-                <div class="faculty-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h4>Maulana Haider</h4>
-                    <p>History & Seerah</p>
-                </div>
-            </div>
-        </section>
+        <div class="buttons">
 
-        <!-- Contact / CTA -->
-        <section id="contact" style="margin: 2.5rem 0;">
-            <div style="background: #133446; border-radius: 48px; padding: 2.5rem 2rem; color: #fff; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                <h3 style="font-size: 2rem; font-weight: 500;"><i class="fas fa-phone-alt" style="color: #d4af37;"></i> Connect with Us</h3>
-                <p style="margin: 1rem 0 1.5rem; font-size: 1.1rem; opacity: 0.9;">Visit our campus or reach out for admissions, inquiries, and collaborations.</p>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; font-size: 1.1rem;">
-                    <span><i class="fas fa-map-pin" style="color: #d4af37;"></i> Najaf, Iraq</span>
-                    <span><i class="fas fa-envelope" style="color: #d4af37;"></i> info@jamiaimamhassan.org</span>
-                    <span><i class="fas fa-phone" style="color: #d4af37;"></i> +964 78 1234 567</span>
-                </div>
-                <div style="margin-top: 2rem;">
-                    <span style="background: #d4af37; color: #0b2a3b; padding: 0.6rem 2.2rem; border-radius: 60px; font-weight: 600;"><i class="fas fa-calendar-check"></i> Visit Us</span>
-                </div>
-            </div>
-        </section>
+            <a href="#programs" class="btn btn-gold">
+                تعلیمی پروگرام
+            </a>
+
+            <a href="#about" class="btn btn-white">
+                جامعہ کا تعارف
+            </a>
+
+        </div>
+
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-left">
-                <h3><i class="fas fa-mosque"></i> Jamia Illmia Imam Hassan Askari</h3>
-                <p style="margin-top: 4px; font-size: 0.9rem;">Illuminating hearts with divine knowledge</p>
-            </div>
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="footer-copy">
-                <p>© 2026 Jamia Illmia Imam Hassan Askari · All rights reserved.</p>
-                <p style="margin-top: 4px; font-size: 0.8rem; opacity: 0.7;">Coded with <i class="fas fa-heart" style="color: #d4af37;"></i> for the seekers of knowledge</p>
-            </div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+    <div class="section-title">
+
+        <h2>جامعہ کا تعارف</h2>
+
+        <span></span>
+
+        <p>علم، عمل اور اخلاق کی بنیاد پر تعلیم و تربیت</p>
+
+    </div>
+
+
+    <div class="about">
+
+        <div class="about-box">
+
+            <h3>جامعہ کے بارے میں</h3>
+
+            <p>
+                جامعہ علمیہ امام حسن عسکریؑ ایک علمی و تربیتی
+                پلیٹ فارم ہے جس کا مقصد قرآن کریم، حدیث،
+                فقہ، عقائد، اخلاق اور اسلامی تعلیمات کو
+                آسان اور منظم انداز میں پیش کرنا ہے۔
+            </p>
+
+            <br>
+
+            <p>
+                اس ویب سائٹ کے ذریعے طلبہ اور عام افراد
+                اسلامی مضامین، دروس، بیانات، تصاویر،
+                ویڈیوز اور دیگر علمی مواد تک رسائی حاصل
+                کر سکتے ہیں۔
+            </p>
+
         </div>
-    </footer>
 
-    <!-- JavaScript for mobile hamburger -->
-    <script>
-        const hamburger = document.getElementById('hamburgerIcon');
-        const navLinks = document.getElementById('navLinks');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        // close menu when a link is clicked (optional)
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+        <div class="quote">
+
+            <div class="arabic">
+                وَقُلْ رَبِّ زِدْنِي عِلْمًا
+            </div>
+
+            <p>
+                "اور کہیے: اے میرے رب! میرے علم میں اضافہ فرما۔"
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROGRAMS -->
+
+<section class="section programs" id="programs">
+
+    <div class="section-title">
+
+        <h2>تعلیمی پروگرامز</h2>
+
+        <span></span>
+
+        <p>اسلامی علوم کے اہم شعبہ جات</p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">☪</div>
+            <h3>قرآن کریم</h3>
+            <p>قرآن کریم کی تلاوت، فہم اور اسلامی تعلیمات کے لیے مواد۔</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>حدیث</h3>
+            <p>احادیث مبارکہ کے مطالعہ اور ان کی تعلیمات کے لیے علمی مواد۔</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✦</div>
+            <h3>فقہ</h3>
+            <p>اسلامی احکام اور روزمرہ زندگی سے متعلق فقہی مسائل کی تعلیم۔</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">☼</div>
+            <h3>عقائد</h3>
+            <p>اسلامی عقائد اور بنیادی دینی تصورات کے مطالعہ کے لیے مواد۔</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">★</div>
+            <h3>اخلاق و تربیت</h3>
+            <p>اسلامی اخلاق، کردار سازی اور اچھی معاشرتی زندگی کی تربیت۔</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⌕</div>
+            <h3>تحقیق و مطالعہ</h3>
+            <p>اسلامی موضوعات پر تحقیقی مضامین، کتب اور علمی مواد۔</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ISLAMIC STATUS -->
+
+<section class="section status-section" id="status">
+
+    <div class="section-title">
+
+        <h2>اسلامی اسٹیٹس</h2>
+
+        <span></span>
+
+        <p>روزانہ ایک خوبصورت اسلامی پیغام</p>
+
+    </div>
+
+
+    <div class="status">
+
+        <div class="arabic">
+            إِنَّ مَعَ الْعُسْرِ يُسْرًا
+        </div>
+
+        <p>
+            بے شک مشکل کے ساتھ آسانی ہے۔
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PHOTO GALLERY -->
+
+<section class="section" id="gallery">
+
+    <div class="section-title">
+
+        <h2>تصویری گیلری</h2>
+
+        <span></span>
+
+        <p>جامعہ کی تصاویر</p>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <div class="gallery-card">
+
+            <img src="photos/campus.jpg"
+                 alt="جامعہ کا کیمپس"
+                 loading="lazy">
+
+            <h3>جامعہ کا کیمپس</h3>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img src="photos/students.jpg"
+                 alt="طلبہ"
+                 loading="lazy">
+
+            <h3>طلبہ</h3>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img src="photos/masjid.jpg"
+                 alt="مسجد"
+                 loading="lazy">
+
+            <h3>مسجد</h3>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img src="photos/program.jpg"
+                 alt="علمی پروگرام"
+                 loading="lazy">
+
+            <h3>علمی پروگرام</h3>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img src="photos/class.jpg"
+                 alt="تعلیمی نشست"
+                 loading="lazy">
+
+            <h3>تعلیمی نشست</h3>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img src="photos/event.jpg"
+                 alt="جامعہ کی تقریب"
+                 loading="lazy">
+
+            <h3>جامعہ کی تقریب</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO GALLERY -->
+
+<section class="section video-section" id="videos">
+
+    <div class="section-title">
+
+        <h2>ویڈیو گیلری</h2>
+
+        <span></span>
+
+        <p>دروس، بیانات اور جامعہ کے پروگرامز</p>
+
+    </div>
+
+
+    <div class="video-grid">
+
+
+        <div class="video-card">
+
+            <video controls poster="photos/campus.jpg">
+
+                <source src="videos/lecture.mp4"
+                        type="video/mp4">
+
+                آپ کا براؤزر ویڈیو کو سپورٹ نہیں کرتا۔
+
+            </video>
+
+            <h3>علمی درس</h3>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <video controls poster="photos/program.jpg">
+
+                <source src="videos/program.mp4"
+                        type="video/mp4">
+
+                آپ کا براؤزر ویڈیو کو سپورٹ نہیں کرتا۔
+
+            </video>
+
+            <h3>جامعہ کا پروگرام</h3>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <video controls poster="photos/class.jpg">
+
+                <source src="videos/bayan.mp4"
+                        type="video/mp4">
+
+                آپ کا براؤزر ویڈیو کو سپورٹ نہیں کرتا۔
+
+            </video>
+
+            <h3>اسلامی بیان</h3>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <video controls poster="photos/event.jpg">
+
+                <source src="videos/event.mp4"
+                        type="video/mp4">
+
+                آپ کا براؤزر ویڈیو کو سپورٹ نہیں کرتا۔
+
+            </video>
+
+            <h3>جامعہ کی سرگرمی</h3>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- NEWS -->
+
+<section class="section" id="news">
+
+    <div class="section-title">
+
+        <h2>تازہ خبریں و اعلانات</h2>
+
+        <span></span>
+
+        <p>جامعہ کے اہم اعلانات اور سرگرمیاں</p>
+
+    </div>
+
+
+    <div class="news">
+
+
+        <div class="news-card">
+
+            <div class="news-icon">📢</div>
+
+            <div class="news-body">
+
+                <h3>داخلہ اعلان</h3>
+
+                <p>
+                    نئے تعلیمی سال کے داخلوں سے متعلق معلومات یہاں شائع کی جائیں گی۔
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="news-card">
+
+            <div class="news-icon">📚</div>
+
+            <div class="news-body">
+
+                <h3>نیا علمی مواد</h3>
+
+                <p>
+                    قرآن، حدیث، فقہ اور اسلامی موضوعات پر نیا مواد شامل کیا جائے گا۔
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="news-card">
+
+            <div class="news-icon">🕌</div>
+
+            <div class="news-body">
+
+                <h3>علمی پروگرام</h3>
+
+                <p>
+                    جامعہ کے دروس، پروگرامز اور سرگرمیوں کی معلومات یہاں دستیاب ہوں گی۔
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ADMISSION -->
+
+<section class="section admission" id="admission">
+
+    <h2>داخلہ اور رجسٹریشن</h2>
+
+    <p>
+        جامعہ کے تعلیمی پروگرامز میں داخلے اور رجسٹریشن کے لیے انتظامیہ سے رابطہ کریں۔
+    </p>
+
+    <br>
+
+    <a href="#contact" class="btn btn-gold">
+        رابطہ کریں
+    </a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+    <div class="section-title">
+
+        <h2>ہم سے رابطہ کریں</h2>
+
+        <span></span>
+
+        <p>معلومات اور رہنمائی کے لیے رابطہ کریں</p>
+
+    </div>
+
+
+    <div class="contact">
+
+
+        <div class="contact-box">
+
+            <h3>رابطے کی معلومات</h3>
+
+            <div class="contact-item">
+                <strong>ادارہ:</strong>
+                جامعہ علمیہ امام حسن عسکریؑ
+            </div>
+
+            <div class="contact-item">
+                <strong>فون:</strong>
+                اپنا فون نمبر یہاں لکھیں
+            </div>
+
+            <div class="contact-item">
+                <strong>ای میل:</strong>
+                اپنی ای میل یہاں لکھیں
+            </div>
+
+            <div class="contact-item">
+                <strong>پتہ:</strong>
+                جامعہ کا مکمل پتہ یہاں لکھیں
+            </div>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <h3>اہم پیغام</h3>
+
+            <p>
+                اسلامی تعلیمات، علمی مواد اور جامعہ کی سرگرمیوں
+                کو عام لوگوں تک پہنچانا ہمارا اہم مقصد ہے۔
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <h3>جامعہ علمیہ امام حسن عسکریؑ</h3>
+
+            <p>
+                قرآن و حدیث، اسلامی علوم، اخلاقی تربیت
+                اور علمی تحقیق کے فروغ کے لیے ایک علمی پلیٹ فارم۔
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>اہم لنکس</h3>
+
+            <ul>
+
+                <li><a href="#home">ہوم</a></li>
+                <li><a href="#about">تعارف</a></li>
+                <li><a href="#programs">تعلیم</a></li>
+                <li><a href="#gallery">تصاویر</a></li>
+                <li><a href="#videos">ویڈیوز</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>دیگر</h3>
+
+            <ul>
+
+                <li><a href="#news">خبریں</a></li>
+                <li><a href="#admission">داخلہ</a></li>
+                <li><a href="#contact">رابطہ</a></li>
+
+                <li>
+                    <a href="privacy.html">
+                        پرائیویسی پالیسی
+                    </a>
+                </li>
+
+                <li>
+                    <a href="terms.html">
+                        شرائط و ضوابط
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 جامعہ علمیہ امام حسن عسکریؑ —
+        جملہ حقوق محفوظ ہیں۔
+
+    </div>
+
+</footer>
+
+
 </body>
-                  </html>
+</html>
