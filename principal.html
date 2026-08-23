@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>پرنسپل | جامعہ علمیہ امام حسن عسکریؑ</title>
+
+    <meta name="description"
+        content="جناب ذکاء الحسن، فاضلِ قم، پرنسپل جامعہ علمیہ امام حسن عسکریؑ۔">
+
+    <meta name="keywords"
+        content="جامعہ علمیہ امام حسن عسکری, پرنسپل, ذکاء الحسن, فاضل قم, Islamic Institute">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Nastaliq Urdu", "Noto Sans Arabic",
+                         "Segoe UI", Arial, sans-serif;
+            background: #f4f8f6;
+            color: #222;
+            line-height: 2;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: linear-gradient(135deg, #063f30, #087f5b);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .mosque-icon {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        /* ================= CONTAINER ================= */
+
+        .container {
+            width: 92%;
+            max-width: 1000px;
+            margin: 45px auto;
+        }
+
+        /* ================= PRINCIPAL CARD ================= */
+
+        .principal-card {
+            background: #fff;
+            border-radius: 22px;
+            padding: 45px 25px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e6eee9;
+        }
+
+        .profile {
+            width: 135px;
+            height: 135px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: #e9f8f1;
+            border: 5px solid #087f5b;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 60px;
+        }
+
+        .principal-card h2 {
+            color: #063f30;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .qualification {
+            color: #087f5b;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .designation {
+            color: #666;
+            font-size: 17px;
+            margin-top: 3px;
+        }
+
+        /* ================= SECTION ================= */
+
+        .section {
+            background: #fff;
+            margin-top: 25px;
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .section h3 {
+            color: #087f5b;
+            font-size: 25px;
+            margin-bottom: 15px;
+            border-right: 5px solid #087f5b;
+            padding-right: 12px;
+        }
+
+        .section p {
+            color: #444;
+            font-size: 17px;
+        }
+
+        /* ================= HIGHLIGHTS ================= */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .highlight-box {
+            background: #f0faf6;
+            border: 1px solid #d9eee5;
+            border-radius: 15px;
+            padding: 22px 15px;
+            text-align: center;
+        }
+
+        .highlight-box .icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box h4 {
+            color: #063f30;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .highlight-box p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            margin-top: 25px;
+            background: linear-gradient(135deg, #063f30, #087f5b);
+            color: #fff;
+            padding: 35px 20px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 80, 55, 0.18);
+        }
+
+        .contact h3 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        .phone-btn {
+            display: inline-block;
+            background: #fff;
+            color: #063f30;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            direction: ltr;
+            transition: 0.3s ease;
+        }
+
+        .phone-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .contact-note {
+            margin-top: 12px;
+            font-size: 13px;
+            opacity: 0.85;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            margin-top: 55px;
+            background: #032c22;
+            color: #d5f5e8;
+            text-align: center;
+            padding: 28px 15px;
+        }
+
+        footer p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .container {
+                width: 94%;
+                margin: 30px auto;
+            }
+
+            .principal-card {
+                padding: 35px 18px;
+            }
+
+            .principal-card h2 {
+                font-size: 27px;
+            }
+
+            .qualification {
+                font-size: 19px;
+            }
+
+            .section {
+                padding: 24px 18px;
+            }
+
+            .section h3 {
+                font-size: 22px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .phone-btn {
+                font-size: 18px;
+                padding: 11px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="mosque-icon">🕌</div>
+
+        <h1>پرنسپل</h1>
+
+        <p>
+            جامعہ علمیہ امام حسن عسکریؑ
+        </p>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <!-- Principal Profile -->
+
+        <section class="principal-card">
+
+            <div class="profile">
+                👤
+            </div>
+
+            <h2>
+                جناب ذکاء الحسن
+            </h2>
+
+            <div class="qualification">
+                فاضلِ قم
+            </div>
+
+            <div class="designation">
+                پرنسپل — جامعہ علمیہ امام حسن عسکریؑ
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+
+        <section class="section">
+
+            <h3>
+                تعارف
+            </h3>
+
+            <p>
+                جناب ذکاء الحسن، فاضلِ قم، جامعہ علمیہ امام حسن عسکریؑ
+                کے پرنسپل ہیں۔ وہ جامعہ کے تعلیمی و انتظامی امور کی نگرانی
+                اور طلبہ کی علمی و اخلاقی تربیت میں اپنا کردار ادا کرتے ہیں۔
+            </p>
+
+        </section>
+
+
+        <!-- Principal Message -->
+
+        <section class="section">
+
+            <h3>
+                پرنسپل کا پیغام
+            </h3>
+
+            <p>
+                علم انسان کے لیے روشنی اور کامیابی کا ذریعہ ہے۔ ہماری کوشش
+                ہے کہ طلبہ کو دینی تعلیم کے ساتھ ساتھ اچھے اخلاق، بہترین
+                کردار اور معاشرے کی خدمت کا شعور بھی حاصل ہو۔ علم، عمل اور
+                اخلاق کو اپنی زندگی کا حصہ بنانا ہی حقیقی کامیابی ہے۔
+            </p>
+
+        </section>
+
+
+        <!-- Highlights -->
+
+        <section class="highlights">
+
+            <div class="highlight-box">
+
+                <div class="icon">📚</div>
+
+                <h4>علم و تعلیم</h4>
+
+                <p>
+                    دینی و علمی تعلیم کی حوصلہ افزائی
+                </p>
+
+            </div>
+
+
+            <div class="highlight-box">
+
+                <div class="icon">🌙</div>
+
+                <h4>دینی تربیت</h4>
+
+                <p>
+                    طلبہ کی اخلاقی اور دینی تربیت
+                </p>
+
+            </div>
+
+
+            <div class="highlight-box">
+
+                <div class="icon">🤝</div>
+
+                <h4>رہنمائی</h4>
+
+                <p>
+                    طلبہ کی تعلیمی و اخلاقی رہنمائی
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Principal -->
+
+        <section class="contact">
+
+            <h3>
+                📞 پرنسپل سے رابطہ
+            </h3>
+
+            <p>
+                جناب ذکاء الحسن — فاضلِ قم
+            </p>
+
+            <a
+                href="tel:03005143393"
+                class="phone-btn">
+                0300 5143393
+            </a>
+
+            <div class="contact-note">
+                رابطے کے لیے اوپر دیے گئے نمبر پر کال کریں۔
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Jamia Ilmiya Imam Hassan Askari
+        </p>
+
+        <p>
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
