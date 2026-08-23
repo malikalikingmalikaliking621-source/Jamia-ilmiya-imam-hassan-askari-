@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore the Quran at Jamia Ilmiya Imam Hassan Askari. Discover Quranic teachings, Surahs, verses, translations and beneficial Islamic reminders.">
+
+    <meta name="keywords"
+          content="Quran, Holy Quran, Quranic Verses, Surahs, Quran Translation, Islamic Knowledge, Jamia Ilmiya Imam Hassan Askari">
+
+    <meta name="author"
+          content="Jamia Ilmiya Imam Hassan Askari">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title"
+          content="Quran | Jamia Ilmiya Imam Hassan Askari">
+
+    <meta property="og:description"
+          content="Explore Quranic teachings, Surahs and beneficial Quranic reminders.">
+
+    <meta property="og:type" content="website">
+
+    <title>
+        Quran | Jamia Ilmiya Imam Hassan Askari
+    </title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="brand">
+
+                <a href="index.html"
+                   aria-label="Jamia Ilmiya Imam Hassan Askari Home">
+
+                    <h1>
+                        Jamia Ilmiya Imam Hassan Askari
+                    </h1>
+
+                </a>
+
+                <p>
+                    Islamic Knowledge & Spiritual Guidance
+                </p>
+
+            </div>
+
+
+            <!-- ================= NAVIGATION ================= -->
+
+            <nav aria-label="Main Navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="quran.html"
+                           aria-current="page">
+                            Quran
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="hadith.html">
+                            Hadith
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="duas.html">
+                            Duas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="islamic-status.html">
+                            Islamic Status
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- ================= PAGE HERO ================= -->
+
+        <section id="quran-hero"
+                 aria-labelledby="quran-title">
+
+            <div class="container">
+
+                <p>
+                    بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+
+                <h2 id="quran-title">
+                    The Holy Quran
+                </h2>
+
+                <p>
+                    Explore the timeless guidance of the Holy Quran
+                    and reflect upon its teachings.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRODUCTION ================= -->
+
+        <section id="quran-introduction"
+                 aria-labelledby="introduction-title">
+
+            <div class="container">
+
+                <h2 id="introduction-title">
+                    About the Holy Quran
+                </h2>
+
+                <p>
+                    The Holy Quran is the sacred scripture of Islam
+                    and a source of guidance, wisdom and reflection
+                    for Muslims.
+                </p>
+
+                <p>
+                    This section is designed to help visitors explore
+                    Quranic content in an organized and accessible way.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED VERSE ================= -->
+
+        <section id="featured-verse"
+                 aria-labelledby="verse-title">
+
+            <div class="container">
+
+                <h2 id="verse-title">
+                    Featured Quranic Reminder
+                </h2>
+
+                <article class="verse-card">
+
+                    <p lang="ar" dir="rtl">
+                        فَإِنَّ مَعَ الْعُسْرِ يُسْرًا
+                    </p>
+
+                    <p>
+                        "Indeed, with hardship comes ease."
+                    </p>
+
+                    <p>
+                        — Quran 94:5
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QURAN SECTIONS ================= -->
+
+        <section id="quran-sections"
+                 aria-labelledby="sections-title">
+
+            <div class="container">
+
+                <h2 id="sections-title">
+                    Explore Quranic Content
+                </h2>
+
+
+                <div class="quran-grid">
+
+                    <!-- Surahs -->
+
+                    <article class="quran-card">
+
+                        <h3>
+                            Surahs
+                        </h3>
+
+                        <p>
+                            Explore the chapters of the Holy Quran
+                            and learn about their themes and teachings.
+                        </p>
+
+                        <a href="#surah-list">
+                            Explore Surahs
+                        </a>
+
+                    </article>
+
+
+                    <!-- Quranic Verses -->
+
+                    <article class="quran-card">
+
+                        <h3>
+                            Quranic Verses
+                        </h3>
+
+                        <p>
+                            Read selected Quranic verses and reflect
+                            upon their meanings and guidance.
+                        </p>
+
+                        <a href="#verse-collection">
+                            View Verses
+                        </a>
+
+                    </article>
+
+
+                    <!-- Quran Topics -->
+
+                    <article class="quran-card">
+
+                        <h3>
+                            Quranic Guidance
+                        </h3>
+
+                        <p>
+                            Discover Quranic teachings related to
+                            faith, patience, gratitude and good character.
+                        </p>
+
+                        <a href="#guidance">
+                            Explore Guidance
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SURAH LIST ================= -->
+
+        <section id="surah-list"
+                 aria-labelledby="surah-title">
+
+            <div class="container">
+
+                <h2 id="surah-title">
+                    Selected Surahs
+                </h2>
+
+                <ol>
+
+                    <li>
+                        <strong>Surah Al-Fatihah</strong>
+                        — The Opening
+                    </li>
+
+                    <li>
+                        <strong>Surah Al-Baqarah</strong>
+                        — The Cow
+                    </li>
+
+                    <li>
+                        <strong>Surah Aal-E-Imran</strong>
+                        — The Family of Imran
+                    </li>
+
+                    <li>
+                        <strong>Surah An-Nisa</strong>
+                        — The Women
+                    </li>
+
+                    <li>
+                        <strong>Surah Al-Ma'idah</strong>
+                        — The Table Spread
+                    </li>
+
+                    <li>
+                        <strong>Surah Al-An'am</strong>
+                        — The Cattle
+                    </li>
+
+                    <li>
+                        <strong>Surah Al-A'raf</strong>
+                        — The Heights
+                    </li>
+
+                    <li>
+                        <strong>Surah Al-Anfal</strong>
+                        — The Spoils of War
+                    </li>
+
+                    <li>
+                        <strong>Surah At-Tawbah</strong>
+                        — The Repentance
+                    </li>
+
+                    <li>
+                        <strong>Surah Yunus</strong>
+                        — Jonah
+                    </li>
+
+                </ol>
+
+                <p>
+                    More Quranic content can be added to this section
+                    as the website grows.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VERSE COLLECTION ================= -->
+
+        <section id="verse-collection"
+                 aria-labelledby="collection-title">
+
+            <div class="container">
+
+                <h2 id="collection-title">
+                    Selected Quranic Verses
+                </h2>
+
+
+                <article>
+
+                    <h3>
+                        Patience and Hope
+                    </h3>
+
+                    <p lang="ar" dir="rtl">
+                        إِنَّ اللَّهَ مَعَ الصَّابِرِينَ
+                    </p>
+
+                    <p>
+                        "Indeed, Allah is with the patient."
+                    </p>
+
+                    <p>
+                        — Quran 2:153
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Remembrance of Allah
+                    </h3>
+
+                    <p lang="ar" dir="rtl">
+                        أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                    </p>
+
+                    <p>
+                        "Surely, in the remembrance of Allah do hearts find rest."
+                    </p>
+
+                    <p>
+                        — Quran 13:28
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Hope in Allah
+                    </h3>
+
+                    <p lang="ar" dir="rtl">
+                        لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ
+                    </p>
+
+                    <p>
+                        "Do not despair of the mercy of Allah."
+                    </p>
+
+                    <p>
+                        — Quran 39:53
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GUIDANCE ================= -->
+
+        <section id="guidance"
+                 aria-labelledby="guidance-title">
+
+            <div class="container">
+
+                <h2 id="guidance-title">
+                    Quranic Guidance
+                </h2>
+
+                <ul>
+
+                    <li>
+                        <strong>Faith:</strong>
+                        Strengthen your connection with Allah.
+                    </li>
+
+                    <li>
+                        <strong>Patience:</strong>
+                        Remain patient during difficulties.
+                    </li>
+
+                    <li>
+                        <strong>Gratitude:</strong>
+                        Recognize and appreciate the blessings of Allah.
+                    </li>
+
+                    <li>
+                        <strong>Good Character:</strong>
+                        Treat others with kindness, honesty and respect.
+                    </li>
+
+                    <li>
+                        <strong>Hope:</strong>
+                        Never lose hope in the mercy of Allah.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= IMPORTANT NOTE ================= -->
+
+        <section id="quran-note"
+                 aria-labelledby="note-title">
+
+            <div class="container">
+
+                <h2 id="note-title">
+                    Important Note
+                </h2>
+
+                <p>
+                    Quranic translations can differ in wording.
+                    For detailed interpretation, visitors should
+                    consult reliable Quranic sources and qualified
+                    Islamic scholars.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RELATED CONTENT ================= -->
+
+        <section id="related-content"
+                 aria-labelledby="related-title">
+
+            <div class="container">
+
+                <h2 id="related-title">
+                    Continue Your Islamic Journey
+                </h2>
+
+                <ul>
+
+                    <li>
+                        <a href="hadith.html">
+                            Explore Hadith
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="duas.html">
+                            Explore Duas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="islamic-status.html">
+                            Islamic Status
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            Islamic Articles
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <h2>
+                Jamia Ilmiya Imam Hassan Askari
+            </h2>
+
+            <p>
+                Islamic Knowledge & Spiritual Guidance
+            </p>
+
+
+            <nav aria-label="Footer Navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="quran.html"
+                           aria-current="page">
+                            Quran
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="hadith.html">
+                            Hadith
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="duas.html">
+                            Duas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="disclaimer.html">
+                            Disclaimer
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <p>
+                &copy; 2026 Jamia Ilmiya Imam Hassan Askari.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
